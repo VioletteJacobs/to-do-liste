@@ -1,6 +1,7 @@
 // structure de base
 let section = document.createElement("section")
 document.body.append(section);
+document.body.style.backgroundColor ="lightgrey"
 section.style.width ="90%"
 section.style.margin = "auto"
 
@@ -108,18 +109,6 @@ boutonsTaches[1].innerHTML = "Terminées"
 boutonsTaches[2].innerHTML = "Toutes"
 
 
-
-// let tacheAjouter
-// let icone1
-// let icone2
-// let icone3
-// let icone4
-// let divIcones 
-// let divNomTache
-// let inputNew
-// let valueInputNew
-// let span 
-
 // click sur ajouter
 bouton1.addEventListener("click", function(){
     if (input.value !="") {
@@ -221,7 +210,7 @@ bouton1.addEventListener("click", function(){
             // modifier?
             span.style.display ="none"
             let span2 = document.createElement("span")
-            span2.innerHTML = "Etes vous sûre de vouloir modifier votre tâche?"
+            span2.innerHTML = "Etes vous sûre de vouloir supprimer votre tâche?"
             span2.style.fontSize ="20px"
             divNomTache.append(span2)
 
